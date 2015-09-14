@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/asiniy/aureso_code-exercise.png?branch=master)](https://travis-ci.org/asiniy/aureso_code-exercise)
 [![Code Climate](https://codeclimate.com/github/asiniy/aureso_code-exercise/badges/gpa.svg)](https://codeclimate.com/github/asiniy/aureso_code-exercise)
 
+You can open this site at [heroku](https://aureso-exercise.herokuapp.com/)
+
 ### Under the hood
 
 * Bootstrap w/ [sandstone theme](https://bootswatch.com/sandstone/)
