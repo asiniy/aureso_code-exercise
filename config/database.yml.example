@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: secret
+  password: secret
+  pool: 5
+
+development:
+  <<: *default
+  database: aureso_code-exercise_development
+
+test:
+  <<: *default
+  database: aureso_code-exercise_test
