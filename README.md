@@ -1,28 +1,10 @@
-== README
+### Under the hood
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Bootstrap w/ [sandstone theme](https://bootswatch.com/sandstone/)
+* Devise (w/ confirmation and recovering through email. Try it!)
+* Puma as
 
-Things you may want to cover:
+### Development & test stack
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Classic ruby testing stack: rspec, faker, fabrication
+* [Letter Opener](https://github.com/ryanb/letter_opener) let you catch emails

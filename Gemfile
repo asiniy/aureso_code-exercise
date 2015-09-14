@@ -13,13 +13,16 @@ gem 'turbolinks'
 gem 'slim-rails'
 
 # assets
+gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
+gem 'devise-bootstrap-views'
 
 # api
 gem 'jbuilder', '~> 2.0'
 
-
+# users
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -30,6 +33,10 @@ group :development, :test do
   gem 'letter_opener'
 
   gem 'quiet_assets'
+
+  gem 'rspec-rails'
+  gem 'faker'
+  gem 'fabrication'
 end
 
 group :development do
