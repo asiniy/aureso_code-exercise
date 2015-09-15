@@ -24,11 +24,11 @@ gem 'jbuilder', '~> 2.0'
 # users
 gem 'devise'
 
-# data
+# data management
 gem 'countries'
+gem 'ancestry'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -38,15 +38,13 @@ group :development, :test do
   gem 'quiet_assets'
 
   gem 'rspec-rails'
-  gem 'faker'
-  gem 'fabrication'
 end
 
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+gem 'faker'       # usually should be used in development group, but I need a lot of fake data in production
+gem 'fabrication' # that's why we need this gem anywhere
 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+group :development do
+  gem 'web-console', '~> 2.0'
   gem 'spring'
 end
 
