@@ -28,6 +28,7 @@ gem 'devise'
 gem 'countries'
 gem 'ancestry'
 gem 'activeadmin', github: 'activeadmin'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'byebug'
@@ -44,9 +45,14 @@ end
 gem 'faker'       # usually should be used in development group, but I need a lot of fake data in production
 gem 'fabrication' # that's why we need this gem anywhere
 
+group :test do
+  gem 'webmock'
+end
+
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'table_print'
 end
 
 group :production do
