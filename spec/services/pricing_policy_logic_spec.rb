@@ -28,7 +28,7 @@ RSpec.describe PricingPolicyLogic do
   end
 
   it 'should return on wrong parameters' do
-    result = PricingPolicyLogic.new(id: flexible_organization.id, base_price: nil).process
+    result = PricingPolicyLogic.new(id: nil, base_price: 100).process
     expect(result[:status]).to eq(400)
     expect(result[:prices]).to eq({})
   end

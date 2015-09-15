@@ -28,5 +28,5 @@ table.table.table-striped
         td = organization.country.name
         td
           = form_tag "/model_type_prices/#{organization.id}.json" do
-            =' number_field_tag :base_price, '', placeholder: 'base price', required: true
+            => number_field_tag :base_price, '', placeholder: 'base price', required: true
             = submit_tag 'Process', class: 'btn btn-success btn-xs'
