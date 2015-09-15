@@ -1,6 +1,7 @@
 class Organization < ActiveRecord::Base
-  has_ancestry
   belongs_to :country
+  has_many :locations
+  has_ancestry
 
   enum type: [:show_room, :service, :dealer]
   enum pricing_policy: [:flexible, :fixed, :prestige]
