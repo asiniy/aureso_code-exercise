@@ -9,6 +9,7 @@ You can open this site at [heroku](https://aureso-exercise.herokuapp.com/)
 * Devise (w/ confirmation and recovering through email. Try it!)
 * Puma as [reccomended heroku rails server](https://devcenter.heroku.com/changelog-items/594)
 * [Countries gem](https://github.com/hexorx/countries) which generate all 250 countries with their codes after `rake db:seed`
+* [Active admin](http://activeadmin.info/) which allow to handle database records
 
 ### Development & test stack
 

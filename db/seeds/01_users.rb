@@ -1,3 +1,6 @@
-User.create!(username: 'Alex', email: 'alex@secret.com', password: 'secret', password_confirmation: 'secret')
+Fabricate(:user, username: 'Adam', email: 'adam@aureso.net', admin: true)
+Fabricate(:user, username: 'Alex', email: 'alex@aureso.net', admin: false)
+
+User.all.each { |u| u.confirm! }
 
 puts 'users loaded'

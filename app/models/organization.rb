@@ -1,6 +1,6 @@
 class Organization < ActiveRecord::Base
   belongs_to :country
-  has_many :locations
+  has_many :locations, dependent: :destroy
   has_ancestry
 
   enum type: [:show_room, :service, :dealer]

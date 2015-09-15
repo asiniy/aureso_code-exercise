@@ -27,6 +27,7 @@ gem 'devise'
 # data management
 gem 'countries'
 gem 'ancestry'
+gem 'activeadmin', github: 'activeadmin'
 
 group :development, :test do
   gem 'byebug'

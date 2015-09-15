@@ -1,5 +1,14 @@
 h3 Random organizations for testing
 
+p
+  ' Admin login:
+  span.label.label-success adam@aureso.net | secret
+p
+  ' Ordinary user login (without
+  = link_to 'admin panel', admin_root_path
+  ' ):
+  span.label.label-default alex@aureso.net | secret
+
 table.table.table-striped
   thead
     th Id
